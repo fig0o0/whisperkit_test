@@ -14,4 +14,11 @@
 .cxx
 local.properties
 
-app/src/main/assets
+# 完全忽略.idea目录
+.idea/
+
+# 忽略.kotlin目录
+.kotlin/
+
+# 忽略assets目录中的大型模型文件
+app/src/main/assets/models/

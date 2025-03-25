@@ -41,10 +41,10 @@ class WhisperKitService {
      * 初始化WhisperKit模型
      * 
      * @param context 应用上下文
-     * @param modelName 模型名称，例如 "openai_whisper-tiny"
+     * @param modelName 模型名称，例如 "openai_whisper-base"
      * @param fromAssets 是否从assets加载模型
      */
-    suspend fun initializeModel(context: Context, modelName: String = "openai_whisper-tiny", fromAssets: Boolean = true) {
+    suspend fun initializeModel(context: Context, modelName: String = "openai_whisper-base", fromAssets: Boolean = true) {
         Log.d(TAG, "开始初始化模型: $modelName, 从assets加载: $fromAssets, 当前初始化状态: ${_isModelInitialized.value}")
         
         if (_isModelInitialized.value) {
