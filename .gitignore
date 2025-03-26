@@ -21,4 +21,4 @@ local.properties
 .kotlin/
 
 # 忽略assets目录中的大型模型文件
-app/src/main/assets/models/
+app/src/main/assets/models/openai_whisper-base/*
